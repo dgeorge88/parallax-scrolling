@@ -1,0 +1,88 @@
+:root{
+    --one: #0D0D0D;
+    --two: #80BDF2;
+    --three: #233A59;
+    --four: #D92D07;
+    --five: #fff;
+}
+
+body, html{
+    height: 100%;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.8em;
+    color: var(--one);
+}
+
+.intro, .surface, .summary, .outro{
+    position: relative;
+    opacity: 0.8;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.intro{
+    background-image: url(img/sun-intro.jpg);
+    min-height: 100%;
+}
+
+.surface{
+    background-image: url(img/sun-close.jpg);
+    background-color: var(--one);
+    height: 1200px;
+}
+
+.summary{
+    background-image: url(img/sun.png);
+    background-color: var(--one);
+    min-height: 1200px;
+}
+
+
+.outro{
+    background-image: url(img/earth-sun.jpg);
+    min-height: 100%;
+}
+
+section{
+    text-align: justify;
+    padding: 4rem 8rem;
+}
+
+.theme-one{
+    background-color:var(--five);
+    color: var(--one);
+}
+
+.theme-two{
+    background-color: var(--three);
+    color: var(--five);
+}
+
+.txt{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: var(--one);
+    font-size: 80px;
+    font-weight: 800;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.txt .border{
+    background-color: var(--one);
+    color: var(--five);
+    padding: 20px;
+}
+
+.txt .border.trans{
+    background-color: transparent;
+    color: var(--one);
+    font-weight: bolder;
+}
